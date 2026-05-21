@@ -37,6 +37,7 @@ export * from "./shipmentintransit.event";
 export * from "./shipmentdelivered.event";
 export * from "./shipmentexceptionraised.event";
 export * from "./dispatchready.event";
+export * from "./transporteravailabilityupdated.event";
 export * from "./event-registry";
 export * from "./base.event";
 export * from "./shipping-failed.event";

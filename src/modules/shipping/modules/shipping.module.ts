@@ -55,6 +55,7 @@ import { GetShippingByFieldHandler } from "../queries/handlers/getshippingbyfiel
 import { GetAllShippingHandler } from "../queries/handlers/getallshipping.handler";
 import { ShippingCrudSaga } from "../sagas/shipping-crud.saga";
 import { ShippingDispatchReadySyncSaga } from "../sagas/shipping-dispatch-ready-sync.saga";
+import { ShippingTransporterAvailabilitySyncSaga } from "../sagas/shipping-transporter-availability-sync.saga";
 import { EVENT_TOPICS } from "../events/event-registry";
 
 //Interceptors
@@ -110,6 +111,7 @@ import { EventStoreService } from "../shared/event-store/event-store.service";
     GetAllShippingHandler,
     ShippingCrudSaga,
     ShippingDispatchReadySyncSaga,    //Configurations
+    ShippingTransporterAvailabilitySyncSaga,
     {
       provide: 'EVENT_SOURCING_CONFIG',
       useFactory: () => ({
